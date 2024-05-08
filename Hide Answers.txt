@@ -1,0 +1,7 @@
+function RemoveAnswers() {
+    const radios = document.querySelectorAll('input[type="radio"]');
+    const checks = document.querySelectorAll('input[type="checkbox"]');
+
+    Array.from(radios).forEach(radio => radio.checked = false);
+    Array.from(checks).forEach(check => check.checked = false);
+}

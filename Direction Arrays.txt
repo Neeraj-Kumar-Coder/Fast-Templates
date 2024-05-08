@@ -1,0 +1,11 @@
+// Four adjacent moves
+int dx4[] = {-1, 0, 1, 0};
+int dy4[] = {0, 1, 0, -1};
+
+// Eight adjacent moves
+int dx8[] = {-1, -1, -1, 0, 1, 1, 1, 0};
+int dy8[] = {-1, 0, 1, 1, 1, 0, -1, -1};
+
+// Knight moves
+int kx[] = { 2, 1, -1, -2, -2, -1, 1, 2 };
+int ky[] = { 1, 2, 2, 1, -1, -2, -2, -1 };

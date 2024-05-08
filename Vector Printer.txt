@@ -1,0 +1,13 @@
+template <typename T>
+ostream &operator<<(ostream &out, const vector<T> &v)
+{
+    out << "[";
+    for (auto it = v.begin(); it != v.end(); ++it)
+    {
+        if (it != v.begin())
+            out << ", ";
+        out << *it;
+    }
+    out << "]";
+    return out;
+}
