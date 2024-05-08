@@ -5,23 +5,25 @@ const char fastio = [](){
     return 0;
 }();
 
+typedef long long int ll;
+typedef pair<int, int> pii;
+typedef pair<ll, ll> pll;
+
 #define ALL(iterable) (iterable).begin(), (iterable).end()
 #define RALL(iterable) (iterable).rbegin(), (iterable).rend()
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
-#define ROUND(x) (((x) >= 0) ? (int)((x) + 0.5) : (int)((x) - 0.5))
+#define ROUND(x) (((x) >= 0) ? (ll)((x) + 0.5) : (ll)((x) - 0.5))
 #define DEBUG(...) cout << "[DEBUG-" << __LINE__ << "]:"; debug_cout(__VA_ARGS__);
 
-typedef long long int ll;
+short dx4[] = {-1, 0, 1, 0};
+short dy4[] = {0, 1, 0, -1};
 
-int dx4[] = {-1, 0, 1, 0};
-int dy4[] = {0, 1, 0, -1};
+short dx8[] = {-1, -1, -1, 0, 1, 1, 1, 0};
+short dy8[] = {-1, 0, 1, 1, 1, 0, -1, -1};
 
-int dx8[] = {-1, -1, -1, 0, 1, 1, 1, 0};
-int dy8[] = {-1, 0, 1, 1, 1, 0, -1, -1};
-
-int kx[] = {2, 1, -1, -2, -2, -1, 1, 2};
-int ky[] = {1, 2, 2, 1, -1, -2, -2, -1};
+short kx[] = {2, 1, -1, -2, -2, -1, 1, 2};
+short ky[] = {1, 2, 2, 1, -1, -2, -2, -1};
 
 template<typename T>
 void debug_cout(const T& arg) {
